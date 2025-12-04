@@ -5,7 +5,7 @@
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
     </head>
     <body>
-        <a-scene mindar-image="imageTargetSrc: ./targets.mind;" mindar-image="filterMinCF:0.0001; filterBeta: 0.001" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-scene mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 2" mindar-image="filterMinCF:0.0001; filterBeta: 0.001" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <!--a-assets-->
                 <!--img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" /-->
                 <!--a-asset-item id="abisal1" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item-->
@@ -16,6 +16,12 @@
             <!--a-sphere position="0 0 0" radius="0.25" color="#EF2D5E"></a-sphere-->
             <!--a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="./abisalExport"-->
             <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/b0724802ea244e77a3c34a355bb05eaf.glb"></a-gltf-model>
+            </a-gltf-model>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 1">
+            <!--a-sphere position="0 0 0" radius="0.25" color="#EF2D5E"></a-sphere-->
+            <!--a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="./abisalExport"-->
+            <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/b0724802ea244e77a3c34a355bb05eaf.glb"></a-gltf-model>
             </a-gltf-model>
         </a-entity>
         </a-scene>
