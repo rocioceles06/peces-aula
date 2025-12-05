@@ -12,19 +12,15 @@
                 <!--a-asset-item id="abisal1" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item-->
             <!--/a-assets-->
 
-        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-        <a-entity mindar-image-target="targetIndex: 0">
-            <!--a-sphere position="0 0 0" radius="0.25" color="#EF2D5E"></a-sphere-->
-            <!--a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="./abisalExport"-->
-            <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/b0724802ea244e77a3c34a355bb05eaf.glb">
-            <!--/a-gltf-model-->
-        </a-entity>
-        <a-entity mindar-image-target="targetIndex: 1">
-            <!--a-sphere position="0 0 0" radius="0.25" color="#EF2D5E"></a-sphere-->
-            <!--a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="./abisalExport"-->
-            <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/39b43d877ae84aeeb0f9057192c0f8e9.glb" animation-mixer>
-            <!--/a-gltf-model-->
-        </a-entity>
+            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+            <a-entity mindar-image-target="targetIndex: 0">
+                <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/b0724802ea244e77a3c34a355bb05eaf.glb">
+                <!--/a-gltf-model-->
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 1">
+                <a-glb-model rotation="0 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/39b43d877ae84aeeb0f9057192c0f8e9.glb" animation-mixer>
+                <!--/a-gltf-model-->
+            </a-entity>
         </a-scene>
     </body>
 </html>
