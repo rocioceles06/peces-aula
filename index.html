@@ -6,35 +6,55 @@
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
     </head>
     <body>
-        <a-scene mindar-image="imageTargetSrc: ./targets.mind; maxTrack: 6" mindar-image="filterMinCF:0.0001; filterBeta: 0.001" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-scene mindar-image="imageTargetSrc: ./targets2.mind; maxTrack: 6" mindar-image="filterMinCF:0.0001; filterBeta: 0.001" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <!--a-assets-->
                 <!--img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png" /-->
                 <!--a-asset-item id="abisal1" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item-->
             <!--/a-assets-->
             <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-            <a-entity mindar-image-target="targetIndex: 4">
+            <a-entity mindar-image-target="targetIndex: 0">
                 <!-- PEZ DIABLO NEGRO -->
                 <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/39b43d877ae84aeeb0f9057192c0f8e9.glb" animation-mixer="clip: *;">
             </a-entity>
-            <a-entity mindar-image-target="targetIndex: 5">
+            <a-entity mindar-image-target="targetIndex: 1">
                 <!-- PEZ DIABLO NEGRO -->
-                <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/5de6dfec123e465fb8e352905b314cfd.glb" animation-mixer="clip: *;">
+                <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="1 1 1" src="https://cdn.tinyglb.com/models/39b43d877ae84aeeb0f9057192c0f8e9.glb" animation-mixer="clip: *;">
             </a-entity>
-            <a-entity mindar-image-target="targetIndex: 0">
+            <a-entity mindar-image-target="targetIndex: 2">
                 <!-- PEZ DEMONIO-->
                 <a-gltf-model rotation="90 0 0 " position="0 -0.5 0.1" scale="0.3 0.3 0.3" src="https://cdn.tinyglb.com/models/fd1356e6e79847bf9f55486abd2aafbc.glb" animation-mixer="clip: *;"></a-gltf-model>
             </a-entity>
-            <a-entity mindar-image-target="targetIndex: 1">
+            <a-entity mindar-image-target="targetIndex: 3">
+                <!-- PEZ DEMONIO-->
+                <a-gltf-model rotation="90 0 0 " position="0 -0.5 0.1" scale="0.3 0.3 0.3" src="https://cdn.tinyglb.com/models/fd1356e6e79847bf9f55486abd2aafbc.glb" animation-mixer="clip: *;"></a-gltf-model>
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 4">
                 <!-- TRIPODE-->
                 <a-gltf-model rotation="90 0 0 " position="0 0 0.5" scale="2 2 2" src="https://cdn.tinyglb.com/models/df829fd5775444679f81bde05e2f6999.glb" animation-mixer="clip: *;"></a-gltf-model>
             </a-entity>
-            <a-entity mindar-image-target="targetIndex: 2">
+            <a-entity mindar-image-target="targetIndex: 5">
+                <!-- TRIPODE-->
+                <a-gltf-model rotation="90 0 0 " position="0 0 0.5" scale="2 2 2" src="https://cdn.tinyglb.com/models/df829fd5775444679f81bde05e2f6999.glb" animation-mixer="clip: *;"></a-gltf-model>
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 6">
                 <!-- SNAILFISH-->
                 <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="2 2 2" src="https://cdn.tinyglb.com/models/faa8f2af6d5548e59ad83f5cc0d23b06.glb" animation-mixer="clip: *;"></a-gltf-model>
             </a-entity>
-            <a-entity mindar-image-target="targetIndex: 3">
+            <a-entity mindar-image-target="targetIndex: 7">
+                <!-- SNAILFISH-->
+                <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="2 2 2" src="https://cdn.tinyglb.com/models/faa8f2af6d5548e59ad83f5cc0d23b06.glb" animation-mixer="clip: *;"></a-gltf-model>
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 8">
                 <!-- PULPO DUMBO-->
                 <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.7 0.7 0.7" src="https://cdn.tinyglb.com/models/3a9cf10597d741458f5aa054714b290b.glb" animation-mixer="clip: *;"></a-gltf-model>
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 9">
+                <!-- PULPO DUMBO-->
+                <a-gltf-model rotation="90 0 0 " position="0 0 1" scale="0.7 0.7 0.7" src="https://cdn.tinyglb.com/models/3a9cf10597d741458f5aa054714b290b.glb" animation-mixer="clip: *;"></a-gltf-model>
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 10">
+                <!-- PEZ DIABLO NEGRO -->
+                <a-gltf-model rotation="90 0 0 " position="0 0 0.1" scale="10 10 10" src="https://cdn.tinyglb.com/models/5de6dfec123e465fb8e352905b314cfd.glb" animation-mixer="clip: *;">
             </a-entity>
         </a-scene>
     </body>
